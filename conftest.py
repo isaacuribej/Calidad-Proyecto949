@@ -16,7 +16,7 @@ def page():
 
 @pytest.fixture(scope="session")
 def app_url():
-    return "file:///C:/Users/User/Documents/health_teach_screening_app.html"
+    return "file:///C:/Users/User/Documents/New_Screening_System.html"
 
 @pytest.fixture
 def user(page, app_url):

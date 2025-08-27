@@ -20,4 +20,4 @@ def test_login_failed_shows_dialog(user):
     )
 
     # Verificamos que apareció el mensaje esperado
-    assert dialog_text.get("message") == "Por favor complete todos los campos del paciente"
+    assert dialog_text.get("message") == "Por favor complete todos los campos del paciente."
