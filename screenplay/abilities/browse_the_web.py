@@ -13,3 +13,7 @@ class BrowseTheWeb:
 
     def get_page(self):
         return self.page
+    
+    @staticmethod
+    def as_(actor):
+        return actor.abilities[BrowseTheWeb]

@@ -1,0 +1,11 @@
+class CuestionarioPage:
+    BOTON_SI = "button:has-text('Sí')"
+    BOTON_NO = "button:has-text('No')"
+    BOTON_NO_SEGURO = "button:has-text('No estoy seguro')"
+    BOTON_SI_ESTOY_ENFERMO = "button:has-text('Sí estoy/está enfermo')"
+    BOTON_SI_ESTABLECIO = "button:has-text('Sí, se estableció')"
+    BOTON_SI_VALORADO = "button:has-text('Sí, he sido valorado')"
+    BOTON_NO_TENGO_ESTUDIOS = "button:has-text('No, no tengo estudios')"
+    BOTON_SIGUIENTE = "button:has-text('Siguiente')"
+    BOTON_CALCULAR_RESULTADO = "button:has-text('Calcular resultado')"
+    BOTON_MAS_5_ANIOS = "button:has-text('Más de 5 años')"

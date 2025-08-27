@@ -8,7 +8,7 @@ def test_login_failed_with_negative_age(user):
         NavigateTo(LoginPage.PATH),
     )
     user.attempts_to(
-        IniciarEvaluacion("1234A54", -33, "M"),
+        IniciarEvaluacion("1234A54", "-33", "M"),
     )
     dialog_text = DialogMessage.capture(user)
     assert dialog_text.get("message") == "Edad fuera de rango permitido."
@@ -18,7 +18,7 @@ def test_login_failed_with_too_high_age(user):
         NavigateTo(LoginPage.PATH),
     )
     user.attempts_to(
-        IniciarEvaluacion("1234A54", 200, "M"),
+        IniciarEvaluacion("1234A54", "200", "M"),
     )
     dialog_text = DialogMessage.capture(user)
     assert dialog_text.get("message") == "Edad fuera de rango permitido."

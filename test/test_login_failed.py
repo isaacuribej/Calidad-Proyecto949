@@ -16,7 +16,7 @@ def test_login_failed_shows_dialog(user):
 
     # Ejecutamos la acción con campos vacíos
     user.attempts_to(
-        IniciarEvaluacion("", "", ""),  # dejamos todo vacío
+        IniciarEvaluacion("", "", "O"),  # dejamos todo vacío
     )
 
     # Verificamos que apareció el mensaje esperado
